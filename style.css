@@ -438,7 +438,6 @@ p.left-text{
     .footer{
         height: 65vh;
         margin-top: 50px;
-        background: red;
     }
     div.contato-conteudo{
         margin-left: 0px;
@@ -461,8 +460,7 @@ p.left-text{
         margin-top: 0px;
     }
     div.contato-call{
-        background-color: black;
-        margin-right: 75px;
+        margin-right: 72px;
         margin-top: 10px;
     }
     .contato-text{
