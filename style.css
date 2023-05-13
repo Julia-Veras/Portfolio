@@ -449,6 +449,9 @@ p.left-text{
         height: 70vh;
         margin-top: 120px;
     }
+    .footer h1{
+        padding-top: -30px;
+    }
     div.contato-conteudo{
         height: 100px;
         margin-top: -50px;
@@ -465,6 +468,6 @@ p.left-text{
         margin-bottom: 50px;
     }
     .contato-text{
-        margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 }
