@@ -57,7 +57,7 @@ nav ul li a{
     text-transform: uppercase;
     font-weight: bolder;
 }
-a.active, a:hover{
+li > a.active,li > a:hover{
     background: #247BA0;
     transition: .5s;
 }
@@ -203,7 +203,7 @@ div.contato-conteudo{
     padding-bottom: 100px;
     margin-left: 10px;
 }
-div.contato-location{
+a.contato-location{
     display: flex;
     font-size: 22px;
     width: 40px;
@@ -217,7 +217,7 @@ div.contato-location{
     cursor: pointer;
     z-index: 99;
 }
-div.contato-mail{
+a.contato-mail{
     display: flex;
     font-size: 22px;
     width: 40px;
@@ -232,7 +232,7 @@ div.contato-mail{
     cursor: pointer;
     z-index: 99;
 }
-div.contato-call{
+a.contato-call{
     display: flex;
     font-size: 22px;
     width: 40px;
@@ -246,7 +246,7 @@ div.contato-call{
     cursor: pointer;
     z-index: 99;
 }
-div.contato-location:hover, div.contato-mail:hover, div.contato-call:hover{
+a.contato-location:hover, a.contato-mail:hover, a.contato-call:hover{
     background: #0082e6;
     color: white;
 }
@@ -324,7 +324,7 @@ p.left-text{
 .fa-github{
     padding: 5px 8px;
 }
-.fa-brands:hover{
+.midias-ult .fa-brands:hover{
     background: #0082e6;
     color: #fff;
 }
@@ -448,6 +448,7 @@ p.left-text{
     .footer{
         height: 70vh;
         margin-top: 120px;
+        background: red;
     }
     div.contato-conteudo{
         height: 100px;
@@ -457,11 +458,12 @@ p.left-text{
         margin-bottom: 90px;
     }
     div.card-mail{
-        margin-top: 0px;
+        margin-top: 30px;
     }
-    div.contato-call{
-        margin-right: 72px;
-        margin-top: 10px;
+    a.contato-call{
+        margin-right: 375px;
+        margin-top:     0px;
+        margin-bottom: 20px;
     }
     .contato-text{
         margin-bottom: 0px;
