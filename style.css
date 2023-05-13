@@ -450,7 +450,7 @@ p.left-text{
         margin-top: 120px;
     }
     .footer h1{
-        padding-top: -30px;
+        padding-top: -10px;
     }
     div.contato-conteudo{
         height: 100px;
@@ -465,7 +465,7 @@ p.left-text{
     a.contato-call{
         margin-right: 72px;
         margin-top:   5px;
-        margin-bottom: 50px;
+        margin-bottom: -30px;
     }
     .contato-text{
         margin-bottom: 50px;
