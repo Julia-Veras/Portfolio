@@ -57,7 +57,7 @@ nav ul li a{
     text-transform: uppercase;
     font-weight: bolder;
 }
-li > a.active,li > a:hover{
+a.active, a:hover{
     background: #247BA0;
     transition: .5s;
 }
@@ -73,47 +73,6 @@ li > a.active,li > a:hover{
 #check{
     display: none;
 }
-
-.sticky .buttom-to-top a{
-    visibility: visible;
-    opacity: 0.6;
-}
-.buttom-to-top a{
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    padding: 8px 6px;
-    right: 3%;
-    bottom: 50px;
-    position: fixed;
-    z-index: 200;
-    border-radius: 10%;
-    font-size: 1.5rem;
-    color: var(--background-one);
-    background-color: var(--color-main-one);
-    transition: all 0.3s;
-    visibility: hidden;
-    opacity: 0;
-}
-/* .up{
-    position: fixed;
-    right: 35px;
-    bottom: 35px;
-    padding: 10px 15px;
-    background: #fff;
-    color: #0082e6;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    cursor: pointer;
-    transition: all 0.7s ease 0s;
-    display: none;
-}
-.up:hover{
-    background: #07344e;
-    color: white;
-} */
 
 /* ------------- SEÇÃO 1 --------------*/
 
@@ -167,6 +126,80 @@ section#portifolio{
     justify-content: center;
     display: flex;
     box-shadow: 3px 3px 3px 4px #0082e6;
+    flex-wrap: wrap;
+}
+div.tudo{
+    flex-wrap: wrap;
+}
+section#portifolio div.tema{
+        margin-bottom: 40px;
+        margin-right: 10px;
+}
+div.port-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.card{
+    background: transparent;
+    width: 350px;
+    height: 600px;
+    border-radius: 10px 50px 10px 50px;
+    border-style: groove;
+    border-color: #1088c0;
+    margin: 50px;
+}
+.card h1{
+    color: #1088c0;
+}
+.card > p{
+    color: white;
+}
+.card-image{
+    background-color: aqua;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 50px 0px 0px;
+}
+.car-1{
+    background-image: url('./img/tigre.jpg');
+    transition: 0.5s;
+}
+.car-2{
+    background-image: url('../Portifolio/img/maccao.jpg');
+    transition: 0.5s;
+}
+.car-3{
+    background-image: url('../Portifolio/img/arara.jpg');
+    transition: 0.5s;
+}
+.car-1:hover, .car-2:hover, .car-3:hover{
+    transform: scale(1.2);
+    transition: all .7s ease-in-out;
+}
+div.link{
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card i{
+    background: #247BA0;
+    color: #13293D;
+    width: 50px;
+    padding: 5px 8px;
+    font-size: 35px;
+    border-radius: 30px;
+    margin: 20px;
+}
+.card i:hover{
+    background: #0082e6;
+    color: #fff;
 }
 
 
@@ -203,7 +236,7 @@ div.contato-conteudo{
     padding-bottom: 100px;
     margin-left: 10px;
 }
-a.contato-location{
+div.contato-location{
     display: flex;
     font-size: 22px;
     width: 40px;
@@ -217,7 +250,7 @@ a.contato-location{
     cursor: pointer;
     z-index: 99;
 }
-a.contato-mail{
+div.contato-mail{
     display: flex;
     font-size: 22px;
     width: 40px;
@@ -232,7 +265,7 @@ a.contato-mail{
     cursor: pointer;
     z-index: 99;
 }
-a.contato-call{
+div.contato-call{
     display: flex;
     font-size: 22px;
     width: 40px;
@@ -246,7 +279,7 @@ a.contato-call{
     cursor: pointer;
     z-index: 99;
 }
-a.contato-location:hover, a.contato-mail:hover, a.contato-call:hover{
+div.contato-location:hover, div.contato-mail:hover, div.contato-call:hover{
     background: #0082e6;
     color: white;
 }
@@ -324,7 +357,7 @@ p.left-text{
 .fa-github{
     padding: 5px 8px;
 }
-.midias-ult .fa-brands:hover{
+.fa-brands:hover{
     background: #0082e6;
     color: #fff;
 }
@@ -344,20 +377,111 @@ p.left-text{
 
 @media (max-width: 1900px){
     .footer{
-        height: 65vh;
+        height: 70vh;
         bottom: 0%;
         z-index: -2;
     }
     div.contato-conteudo{
         margin-left: 0px;
     }
-    .footer > h1{
-        padding-top: 50px;
+    section#portifolio{
+        height: 100vh;
     }
+    section#contato{
+        margin-top: 500px;
+    }
+}
+/* 
+@media (max-width: 1440px){
+      .footer{
+        background: purple;
+      }
+      div.contato-conteudo{
+        width: 200%;
+        position: relative;
+        left: 0%;
+        margin-right: 50px;
+      }
+      div.contato-location{
+        margin-left: -15px;
+      }
+}
+
+
+@media (max-width: 1364px){
+    .footer{
+        background: gray;
+      }
+      div.contato-conteudo{
+        border: 1px solid red;
+      }
+      div.contato-location{
+        margin-left: -50px;
+      }
+}
+
+
+@media (max-width: 1330px){
+    .footer{
+        background: black;
+    }
+    div.contato-conteudo{
+        border: 1px solid red;
+      }
+    div.contato-location{
+        margin-left: -100px;
+      }
 
 }
 
 
+@media (max-width: 1280px){
+    .footer{
+        background: yellow;
+    }
+    section#contato div.tema > h1{
+        margin-top: 110px;
+        left: 170%;
+    }
+    div.contato-conteudo{
+        width: 682px;
+        left: 8%;
+        border: 1px solid green;
+    }
+    div.contato-location{
+        margin-left: -250px;
+      }
+      div.contato-mail{
+        margin-left: -110px;
+      }
+      div.contato-call{
+        margin-left: -80px;
+      }
+
+} */
+/* @media (max-width: 1190px){
+    section#contato div.tema > h1{
+        left: 160%;
+    }
+    .footer{
+        background: pink;
+    }
+    div.contato-conteudo{
+        width: 682px;
+        left: 6%;
+    }
+} */
+
+@media (max-width: 1349px){
+    section#portifolio{
+        margin-bottom: 300px;
+        height: 100vh;
+    }
+    section#contato{
+        margin-top: 100%;
+    }
+
+}
 
 @media (max-width: 952px) {
         label.logo{
@@ -382,7 +506,22 @@ p.left-text{
         div.contato-conteudo{
             margin-left: 0px;
         }
-       
+        div.port-container{
+            flex-wrap: wrap;
+            display: inline-flex;
+        }
+        .cards{
+            margin-right: 50px;
+        }
+        section#portifolio{
+            margin-bottom: 300px;
+            height: 170vh;
+        }
+        section#contato{
+            margin-top: 100%;
+        }
+    
+    
 }
 
 
@@ -409,7 +548,7 @@ p.left-text{
     nav ul li a{
         font-size: 20px;
     }
-    li > a:hover, li > a.active{
+    a:hover, a.active{
         background: none;
         color: #0082e6;
     }
@@ -432,6 +571,13 @@ p.left-text{
     .contato-conteudo{
         padding-left: 15px;
     }
+    section#portifolio{
+        margin-bottom: 300px;
+        height: 170vh;
+    }
+    section#contato{
+        margin-top: 190%;
+    }
 
 }
 @media (max-width: 840px){
@@ -445,29 +591,22 @@ p.left-text{
 
 }
 @media (max-width: 658px){
-    .footer{
-        height: 70vh;
-        margin-top: 120px;
-    }
-    .footer h1{
-        padding-top: -10px;
-    }
     div.contato-conteudo{
         height: 100px;
         margin-top: -50px;
     }
     section#contato div.tema > h1{
+        margin-top: -50px;
         margin-bottom: 90px;
+    }   
+    section#portifolio{
+        margin-bottom: 300px;
+        height: 170vh;
     }
-    div.card-mail{
-        margin-top: 30px;
+    section#contato{
+        margin-top: 190%;
     }
-    a.contato-call{
-        margin-right: 72px;
-        margin-top:   5px;
-        margin-bottom: -30px;
-    }
-    .contato-text{
-        margin-bottom: 50px;
-    }
+    
 }
+
+
