@@ -99,7 +99,6 @@ section#sobre{
     scroll-snap-align: center;
     justify-content: center;
     display: flex;
-    box-shadow: 3px 3px 3px 4px #0082e6;
 }
 div.tema > h1{
     color: #0082e6;
