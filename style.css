@@ -165,15 +165,15 @@ div.port-container{
     border-radius: 10px 50px 0px 0px;
 }
 .car-1{
-    background-image: url('./img/tigre.jpg');
+    background-image: url('./Portifolio/img/tigre.jpg');
     transition: 0.5s;
 }
 .car-2{
-    background-image: url('../Portifolio/img/maccao.jpg');
-    transition: 0.5s;
+    background-image: url('./Portifolio/img/maccao.jpg');
+        transition: 0.5s;
 }
 .car-3{
-    background-image: url('../Portifolio/img/arara.jpg');
+    background-image: url('./Portifolio/img/arara.jpg');
     transition: 0.5s;
 }
 .car-1:hover, .car-2:hover, .car-3:hover{
