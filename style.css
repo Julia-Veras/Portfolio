@@ -57,7 +57,7 @@ nav ul li a{
     text-transform: uppercase;
     font-weight: bolder;
 }
-a.active, a:hover{
+li > a.active, li > a:hover{
     background: #247BA0;
     transition: .5s;
 }
@@ -133,7 +133,6 @@ div.tudo{
 }
 section#portifolio div.tema{
         margin-bottom: 40px;
-        margin-right: 10px;
 }
 div.port-container{
     display: flex;
@@ -604,7 +603,7 @@ p.left-text{
         height: 170vh;
     }
     section#contato{
-        margin-top: 190%;
+        margin-top: 270%;
     }
     
 }
