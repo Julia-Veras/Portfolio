@@ -593,6 +593,9 @@ p.left-text{
         height: 100px;
         margin-top: -50px;
     }
+    div.contato-mail{
+        margin-bottom: 15px;
+    }
     section#contato div.tema > h1{
         margin-top: -50px;
         margin-bottom: 90px;
@@ -602,7 +605,7 @@ p.left-text{
         height: 170vh;
     }
     section#contato{
-        margin-top: 270%;
+        margin-top: 190%;
     }
     
 }
