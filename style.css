@@ -597,6 +597,7 @@ p.left-text{
     }
 
 }
+
 @media (max-width: 658px){
     div.contato-conteudo{
         height: 100px;
@@ -606,17 +607,16 @@ p.left-text{
         margin-bottom: 15px;
     }
     section#contato div.tema > h1{
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 90px;
     }   
     section#portifolio{
         margin-bottom: 300px;
-        height: 200vh;
+        height: 170vh;
     }
     section#contato{
-        margin-top: 220%;
+        margin-top: 200%;
     }
     
 }
-
 
