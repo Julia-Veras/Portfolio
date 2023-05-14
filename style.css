@@ -125,7 +125,6 @@ section#portifolio{
     scroll-snap-align: center;
     justify-content: center;
     display: flex;
-    box-shadow: 3px 3px 3px 4px #0082e6;
     flex-wrap: wrap;
 }
 div.tudo{
