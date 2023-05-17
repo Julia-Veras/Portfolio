@@ -31,6 +31,7 @@ nav{
 }
 nav.rolagem{
     background-color: #006494;
+    z-index: 99;
 }
 label.logo{
     color: white;
@@ -83,23 +84,12 @@ section#home{
     display: flex;
     align-items: center;
     scroll-snap-align: center;
-    border-bottom: 10px solid red;
 }
 div.left{
     margin: 50px 100px;
 }
 /* ------------ FIM ---------------- */
 
-/* ------------- SEÇÃO 2--------------*/
-
-section#sobre{
-    width: 100%;
-    height: 100vh;
-    background: #13293D;
-    scroll-snap-align: center;
-    justify-content: center;
-    display: flex;
-}
 div.tema > h1{
     color: #0082e6;
     font-size: 40px;
@@ -109,10 +99,85 @@ div.tema > h1{
     text-transform: uppercase;
     padding: 10px;
     margin-top: 90px;
+    margin-bottom: 50px;
     border-radius: 5px;
 }
 
 
+/* ------------- SEÇÃO 2--------------*/
+
+section#sobre{
+    width: 100%;
+    height: 80vh;
+    background: #13293D;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+div.sobre-container{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+div.simbo{
+    display: flex;
+    /* border: 1px solid green; */
+    width: 40%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div.simbo > img{
+    width: 300px;
+    margin-left: 250px;
+}
+div.sobre-right{
+    width: 35%;
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 350px;
+    flex-wrap: wrap;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff ;
+    border-bottom-right-radius: 90px;
+    margin-right: 10px;
+}
+
+div.sobre-right .sobre-titu{
+    font-size: 1.4rem;
+    color: #0082e6;
+    margin-bottom: 20px;
+    margin-left: -60px;
+    position: relative;
+    left: 0%;
+}
+div.sobre-texto{
+    /* background: red; */
+    width: 70%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -70px;
+}
+div.sobre-texto > h1{
+    color: #1088c0;
+    margin-bottom: -10px;
+    margin-left: 0px;
+    font-size: 30px;
+}
+div.sobre-texto h1 > strong{
+    color: #fff;
+}
+div.sobre-texto > p{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    margin-left:0 px;
+}
 
 /* ------------ FIM ---------------- */
 
@@ -120,8 +185,7 @@ div.tema > h1{
 section#portifolio{
     width: 100%;
     height: 100vh;
-    /* background: #13293D; */
-    border-color: pink;
+    background: #13293D; 
     scroll-snap-align: center;
     justify-content: center;
     display: flex;
@@ -132,7 +196,8 @@ div.tudo{
 }
 section#portifolio div.tema{
         margin-bottom: 40px;
-        margin-right: 10px;
+        margin-right: 40px;
+        margin-left: 50px;
 }
 div.port-container{
     display: flex;
@@ -162,6 +227,10 @@ div.port-container{
 }
 .card > p{
     color: white;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 .card-image{
     background-color: aqua;
@@ -171,15 +240,15 @@ div.port-container{
     border-radius: 10px 50px 0px 0px;
 }
 .car-1{
-    background-image: url('./Portifolio/img/tigre.jpg');
+    background-image: url('./img/tigre.jpg');
     transition: 0.5s;
 }
 .car-2{
-    background-image: url('./Portifolio/img/maccao.jpg');
+    background-image: url('./img/maccao.jpg');
     transition: 0.5s;
 }
 .car-3{
-    background-image: url('./Portifolio/img/arara.jpg');
+    background-image: url('./img/arara.jpg');
     transition: 0.5s;
 }
 .car-1:hover, .car-2:hover, .car-3:hover{
@@ -207,7 +276,9 @@ div.link{
     background: #0082e6;
     color: #fff;
 }
-
+div.alto{
+    margin-top: 80px;
+}
 
 
 /* ------------ FIM ---------------- */
@@ -226,8 +297,9 @@ section#contato{
     
 }
 section#contato div.tema > h1{
-    margin-bottom: 40px;
-    margin-right: 10px;
+    margin-top: 66px;
+    margin-bottom: 82px;
+    padding-top: 25px;
 }
 
 div.contato-conteudo{
@@ -379,8 +451,6 @@ p.left-text{
 
 
 
-
-
 @media (max-width: 1900px){
     .footer{
         height: 70vh;
@@ -395,6 +465,33 @@ p.left-text{
     }
     section#contato{
         margin-top: 500px;
+    }
+
+}
+@media (max-width: 1440px){
+    div.sobre-container{
+        margin-top: 30px;
+    }
+    div.sobre-right{
+        margin-right: 0px;
+        width: 45%;
+        height: 50vh;
+        padding-left: 120px;
+        padding-right: 30px;
+        position: relative;
+        left: 25%;
+        top: -45%;
+    }
+    div.sobre-titu{
+        margin-left: 10px;
+    }
+    div.sobre-texto{
+        width: 200%;
+        margin-left: -30px;
+    }
+    div.simbo{
+        margin-left: -50px;
+        width: 500px;
     }
 }
 /* 
@@ -478,18 +575,42 @@ p.left-text{
     }
 } */
 
-@media (max-width: 1349px){
+@media (max-width: 1359px){
     section#portifolio{
         margin-bottom: 300px;
         height: 100vh;
     }
     section#contato{
         margin-top: 100%;
+        margin-bottom: 50px;
+    }
+    .footer{
+        margin-top: 50px;
+        text-align: center;
+        padding-top: 120px;
+        height: 90vh;
+    }
+
+    div.sobre-right{
+        width: 55%;
+        left: 18%;
+        margin-right: 90px;
+    }
+    div.sobre-titu{
+        margin-left: 0px;
+    }
+    div.sobre-texto{
+        width: 200%;
+        margin-left: -30px;
+    }
+    div.simbo{
+        margin-left: -100px;
+        width: 500px;
     }
 
 }
 
-@media (max-width: 952px) {
+@media (max-width: 953px) {
         label.logo{
             font-size: 40px;
             padding-left: 50px;
@@ -505,8 +626,22 @@ p.left-text{
             width: 400px;
             display: none;
         }
+        div.sobre-container{
+            flex-wrap: wrap-reverse;
+        }
+        div.simbo{
+            margin-left: -200px;
+            margin-right: 550px;
+            margin-bottom: 0%;
+            position: relative;
+            top: -50%;
+        }
+        div.sobre-right{
+            top: 0%;
+            margin-left: 25%;
+        }
         .footer{
-            height: 60vh;
+            height: 90vh;
             margin-top: 50px;
         }
         div.contato-conteudo{
@@ -524,15 +659,31 @@ p.left-text{
             height: 170vh;
         }
         section#contato{
-            margin-top: 100%;
+            margin-top: 80%;
         }
-    
-    
+}
+@media (max-width: 933px){  
+    div.sobre-right div.sobre-titu{
+        margin-left: -70px;
+    }
+    div.sobre-right div.sobre-titu{
+        font-size: 1.3rem;
+        margin-left: -25%;
+    }
+
 }
 
+@media (max-width: 899px){
+    section#portifolio{
+        margin-bottom: 500px;
+        height: 190vh;
+    }
+    section#contato{
+        margin-top: 140%;
+    }
+}
 
-
-@media (max-width: 858px){
+@media (max-width: 859px){
     .checkbtn{
         display: block;
     }
@@ -569,6 +720,24 @@ p.left-text{
         left: -20%;
         width: 100px;
     }
+    section#sobre{
+        height: 120vh;
+    }
+    div.sobre-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.simbo{
+        top: 0%;
+        left: 28%;
+    }
+    div.sobre-right{
+        width: 950px;
+        top: 5%;
+        left: 0%;
+        margin-left: 50px;
+    }
 
     section#contato div.tema > h1{
        left: 0%;
@@ -588,7 +757,7 @@ p.left-text{
 }
 @media (max-width: 840px){
     .footer{
-        height: 65vh;
+        height: 90vh;
         margin-top: 50px;
     }
     div.contato-conteudo{
@@ -596,7 +765,6 @@ p.left-text{
     }
 
 }
-
 @media (max-width: 658px){
     div.contato-conteudo{
         height: 100px;
@@ -611,11 +779,34 @@ p.left-text{
     }   
     section#portifolio{
         margin-bottom: 300px;
-        height: 170vh;
+        height: 220vh;
     }
     section#contato{
-        margin-top: 200%;
+        margin-top: 300%;
+        margin-bottom: 200px;
     }
-    
+    div.simbo{
+        left: 38%;
+    }
+    div.sobre-right{
+        width: 990px;
+    }
+    div.sobre-right div.sobre-titu{
+        margin-left: -50px;
+        font-size: 1.3rem;
+    }
 }
 
+@media (max-width: 633px){
+    div.simbo{
+        left: 39%;
+    }
+    div.sobre-right{
+        width: 1000px;
+        left: 2%;
+    }
+    div.sobre-right div.sobre-titu{
+        font-size: 1.3rem;
+        margin-left: -20%;
+    }
+}
