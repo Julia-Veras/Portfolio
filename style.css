@@ -782,8 +782,8 @@ p.left-text{
         height: 220vh;
     }
     section#contato{
-        margin-top: 300%;
-        margin-bottom: 140px;
+        margin-top: 250%;
+        margin-bottom: 115px;
     }
     div.simbo{
         left: 38%;
@@ -808,5 +808,10 @@ p.left-text{
     div.sobre-right div.sobre-titu{
         font-size: 1.3rem;
         margin-left: -20%;
+    }
+}
+@media (max-width: 500px){
+    div.simbo{
+        left: 50%;
     }
 }
