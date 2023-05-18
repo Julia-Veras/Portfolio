@@ -515,7 +515,7 @@ p.left-text{
     margin-top: 50px;
 }
 
-container-rede > .fa-brands{
+div.container-redes .fa-brands{
     background: #247BA0;
     color: #13293D;
     width: 50px;
@@ -524,10 +524,10 @@ container-rede > .fa-brands{
     margin: 50px 30px;
     border-radius: 30px;
 }
-container-rede > .fa-github{
-    padding: 5px 8px;
+div.container-redes .fa-github{
+    padding: 5px 0px;
 }
-container-rede >    .fa-brands:hover{
+div.container-redes .fa-brands:hover{
     background: #0082e6;
     color: #fff;
 }
@@ -907,6 +907,9 @@ container-rede >    .fa-brands:hover{
     }
 }
 @media (max-width: 500px){
+    div.home-left{
+        margin-left: 10px;
+    }
     div.home-left > h2{font-size: 2rem;}
     div.home-left >.p2{ font-size: 1.4rem;}
     div.home-left >.p3{ font-size: 1.4rem;margin-left: 0%;}
