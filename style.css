@@ -515,7 +515,7 @@ p.left-text{
     margin-top: 50px;
 }
 
-div.container-redes .fa-brands{
+.fa-brands{
     background: #247BA0;
     color: #13293D;
     width: 50px;
@@ -524,10 +524,10 @@ div.container-redes .fa-brands{
     margin: 50px 30px;
     border-radius: 30px;
 }
-div.container-redes .fa-github{
+.fa-github{
     padding: 5px 0px;
 }
-div.container-redes .fa-brands:hover{
+.fa-brands:hover{
     background: #0082e6;
     color: #fff;
 }
