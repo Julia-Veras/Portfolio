@@ -86,6 +86,7 @@ section#home{
     scroll-snap-align: center;  
     justify-content: center; 
     flex-wrap: wrap;
+    z-index: -99;
 }
 div.home-container{
     width: 500px;
@@ -152,19 +153,19 @@ div.home-linguas > i{
     align-items: center;
     padding: 5px;
 }
-div.home-linguas > i.fa-html5:hover, div.home-linguas > i.fa-css3-alt:hover, div.home-linguas > i.fa-js:hover{
+div.home-linguas > .html:hover, div.home-linguas > .css:hover, div.home-linguas > .js:hover{
     color: #042233;
     background: #fff;
 }
-div.home-linguas >  i.fa-html5{
+div.home-linguas >  .html{
     animation:  moveLeftToRight 1s .4s forwards;
     color: red;
 }
-div.home-linguas > i.fa-css3-alt{
+div.home-linguas > .css{
     animation:  moveLeftToRight 1s .5s forwards;
     color: #2489C4;
 }
-div.home-linguas > i.fa-js{
+div.home-linguas > .js{
     animation:  moveLeftToRight 1s .6s forwards;
     color: yellow;
     width: 38px;
@@ -332,15 +333,15 @@ div.port-container{
     border-radius: 10px 50px 0px 0px;
 }
 .car-1{
-    background-image: url('./Potifolio/img/tigre.jpg');
+    background-image: url('./Portifolio/img/tigre.jpg');
     transition: 0.5s;
 }
 .car-2{
-    background-image: url('./Potifolio/img/maccao.jpg');
+    background-image: url('./Portifolio/img/maccao.jpg');
     transition: 0.5s;
 }
 .car-3{
-    background-image: url('./Potifolio/img/arara.jpg');
+    background-image: url('./Portifolio/img/arara.jpg');
     transition: 0.5s;
 }
 .car-1:hover, .car-2:hover, .car-3:hover{
@@ -515,7 +516,7 @@ p.left-text{
     margin-top: 50px;
 }
 
-.fa-brands{
+ .fo-media{
     background: #247BA0;
     color: #13293D;
     width: 50px;
@@ -524,10 +525,10 @@ p.left-text{
     margin: 50px 30px;
     border-radius: 30px;
 }
-.fa-github{
+ .fa-github{
     padding: 5px 0px;
 }
-.fa-brands:hover{
+ .fo-media:hover{
     background: #0082e6;
     color: #fff;
 }
@@ -544,6 +545,9 @@ p.left-text{
 
 
 @media (max-width: 1900px){
+    nav{
+        z-index: 99;
+    }
     .footer{
         height: 70vh;
         bottom: 0%;
@@ -561,6 +565,9 @@ p.left-text{
 
 }
 @media (max-width: 1440px){
+    nav{
+        z-index: 99;
+    }
     div.sobre-container{
         margin-top: 30px;
     }
@@ -668,6 +675,9 @@ p.left-text{
 } */
 
 @media (max-width: 1359px){
+    nav{
+        z-index: 99;
+    }
     section#portifolio{
         margin-bottom: 300px;
         height: 100vh;
@@ -703,6 +713,9 @@ p.left-text{
 }
 
 @media (max-width: 953px) {
+    nav{
+        z-index: 99;
+    }
         label.logo{
             font-size: 40px;
             padding-left: 50px;
@@ -756,6 +769,9 @@ p.left-text{
 }
 
 @media (max-width: 933px){  
+    nav{
+        z-index: 99;
+    }
     div.sobre-right div.sobre-titu{
         margin-left: -70px;
     }
@@ -767,6 +783,9 @@ p.left-text{
 }
 
 @media (max-width: 899px){
+    nav{
+        z-index: 99;
+    }
     section#portifolio{
         margin-bottom: 500px;
         height: 190vh;
@@ -777,6 +796,9 @@ p.left-text{
 }
 
 @media (max-width: 859px){
+    nav{
+        z-index: 99;
+    }
     .checkbtn{
         display: block;
     }
@@ -849,6 +871,9 @@ p.left-text{
 
 }
 @media (max-width: 840px){
+    nav{
+        z-index: 99;
+    }
     .footer{
         height: 90vh;
         margin-top: 50px;
@@ -859,6 +884,9 @@ p.left-text{
 
 }
 @media (max-width: 658px){
+    nav{
+        z-index: 99;
+    }
     .footer{
         padding-top: -150px;
     }
@@ -894,6 +922,9 @@ p.left-text{
 }
 
 @media (max-width: 633px){
+    nav{
+        z-index: 99;
+    }
     div.simbo{
         left: 39%;
     }
@@ -911,9 +942,10 @@ p.left-text{
         z-index: 99;
     }
     div.home-left{
-        margin-left: 10px;
+        margin-left: 15px;
     }
     div.home-left > h2{font-size: 2rem;}
+    div.home-left > h3{width: 90%;margin-left: 20px;}
     div.home-left >.p2{ font-size: 1.4rem;}
     div.home-left >.p3{ font-size: 1.4rem;margin-left: 0%;}
     div.simbo{
@@ -939,5 +971,6 @@ p.left-text{
     .footer{
         padding-top: 2%;
         height: 55vh;
+        width: 100%;
     }
 }
