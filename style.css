@@ -83,10 +83,102 @@ section#home{
     height: 90vh;
     display: flex;
     align-items: center;
-    scroll-snap-align: center;
+    scroll-snap-align: center;  
+    justify-content: center; 
+    flex-wrap: wrap;
 }
-div.left{
-    margin: 50px 100px;
+div.home-container{
+    width: 500px;
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.home-left{
+    width: 500px;
+    height: 50vh;
+}
+div.home-left > h1{ animation: moveToTop 1s .5s forwards;  opacity: 0; font-size: 4rem;display: flex;justify-content: center;width: 100%;color: white;font-weight: 500;}
+div.home-left > h2{ animation: moveToTop 1s .5s forwards;  opacity: 0; font-size: 2.5rem;display: flex;justify-content: center;width: 100%;color: #0c3e74;font-weight: 600;}
+div.home-left > h3{ 
+    animation: moveToTop 1s .6s forwards; 
+    opacity: 0;
+    font-size: 2.3rem;
+    padding-left: 50px;
+    margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 5px solid #fff;
+    border-radius: 8px;
+}
+div.home-left > h3 strong{margin-left: 5px;}
+div.home-left >.p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
+div.home-left >.p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
+div.home-left >.p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
+
+@keyframes moveToTop {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+div.home-linguas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    bottom: 0%;
+    margin-top: -50px;
+    border-bottom: 2px solid #0082e6;
+}
+div.home-linguas > i{
+    font-size: 45px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 27px;
+    height: 35px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+div.home-linguas > i.fa-html5:hover, div.home-linguas > i.fa-css3-alt:hover, div.home-linguas > i.fa-js:hover{
+    color: #042233;
+    background: #fff;
+}
+div.home-linguas >  i.fa-html5{
+    animation:  moveLeftToRight 1s .4s forwards;
+    color: red;
+}
+div.home-linguas > i.fa-css3-alt{
+    animation:  moveLeftToRight 1s .5s forwards;
+    color: #2489C4;
+}
+div.home-linguas > i.fa-js{
+    animation:  moveLeftToRight 1s .6s forwards;
+    color: yellow;
+    width: 38px;
+    border-radius: 5px;
+}
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(250px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 /* ------------ FIM ---------------- */
 
@@ -423,7 +515,7 @@ p.left-text{
     margin-top: 50px;
 }
 
-.fa-brands{
+container-rede > .fa-brands{
     background: #247BA0;
     color: #13293D;
     width: 50px;
@@ -432,10 +524,10 @@ p.left-text{
     margin: 50px 30px;
     border-radius: 30px;
 }
-.fa-github{
+container-rede > .fa-github{
     padding: 5px 8px;
 }
-.fa-brands:hover{
+container-rede >    .fa-brands:hover{
     background: #0082e6;
     color: #fff;
 }
@@ -662,6 +754,7 @@ p.left-text{
             margin-top: 80%;
         }
 }
+
 @media (max-width: 933px){  
     div.sobre-right div.sobre-titu{
         margin-left: -70px;
@@ -766,6 +859,9 @@ p.left-text{
 
 }
 @media (max-width: 658px){
+    .footer{
+        padding-top: -150px;
+    }
     div.contato-conteudo{
         height: 100px;
         margin-top: -50px;
@@ -783,7 +879,7 @@ p.left-text{
     }
     section#contato{
         margin-top: 250%;
-        margin-bottom: 115px;
+        margin-bottom: 95px;
     }
     div.simbo{
         left: 38%;
@@ -811,7 +907,31 @@ p.left-text{
     }
 }
 @media (max-width: 500px){
+    div.home-left > h2{font-size: 2rem;}
+    div.home-left >.p2{ font-size: 1.4rem;}
+    div.home-left >.p3{ font-size: 1.4rem;margin-left: 0%;}
     div.simbo{
-        left: 50%;
+        left: 60%;
+    }
+    div.sobre-right{
+        width: 1090px;
+        left: 5%;
+    }
+    div.sobre-right div.sobre-titu{
+        font-size: 1.1rem;
+        margin-left: -70%;
+        margin-right: -13px;
+    }
+    div.sobre-texto{
+        margin-left: -48%;
+        padding-left: 15px;
+    }
+    section#contato{
+        margin-top: 200%;
+        margin-bottom: 80px;
+    }
+    .footer{
+        padding-top: 2%;
+        height: 55vh;
     }
 }
