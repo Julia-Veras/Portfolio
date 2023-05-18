@@ -907,6 +907,9 @@ p.left-text{
     }
 }
 @media (max-width: 500px){
+    nav{
+        z-index: 99;
+    }
     div.home-left{
         margin-left: 10px;
     }
