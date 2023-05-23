@@ -198,7 +198,7 @@ div.tema > h1{
     margin-bottom: 50px;
     border-radius: 5px;
 }
-a.button{
+div.home-container a.button{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -217,7 +217,7 @@ a.button{
     border: 1px solid white;
     transition: all .7s;
 }
-a.button::after, a.button::before{
+div.home-container a.button::after, a.button::before{
     content: "";
     background-color: #0082e6;
     width: 0;
@@ -228,25 +228,25 @@ a.button::after, a.button::before{
     z-index: -1;
     transition: all .7s ease;
 }
-a.button:hover::before{
+div.home-container a.button:hover::before{
     width: 100%;
     right: 0px;
     left: auto;
     transition: all .7s;
 }
-a.button::before{
+div.home-container a.button::before{
     top: 0;
     left: 0;
     right: auto;
     transition: all .7s;
 }
-a.button:hover::after{
+div.home-container a.button:hover::after{
     width: 100%;
     left: 0;
     right: auto;
     transition: all .7s;
 }
-a.button::after{
+div.home-container a.button::after{
     bottom: 0;
     right: 0;
     left: auto;
