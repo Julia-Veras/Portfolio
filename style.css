@@ -30,7 +30,8 @@ nav{
     height: 80px;
 }
 nav.rolagem{
-    background-color: #006494;
+    /* background-color: #006494; */
+    background: rgb(141, 141, 16);
     z-index: 99;
 }
 label.logo{
