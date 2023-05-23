@@ -996,6 +996,7 @@ p.left-text{
     body{
         margin-right: 50px;
         background-color:  red;
+        width: 90%;
     }
     nav{
         z-index: 99;
