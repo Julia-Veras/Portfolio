@@ -995,8 +995,7 @@ p.left-text{
 @media (max-width: 500px){
     body{
         margin-right: 50px;
-        background-color:  yellow;
-        width: 90%;
+        background-color:  green;
     }
     nav{
         z-index: 99;
@@ -1035,5 +1034,6 @@ p.left-text{
     .footer{
         padding-top: 2%;
         height: 55vh;
+        width: 100%;
     }
 }
