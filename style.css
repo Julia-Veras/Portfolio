@@ -994,7 +994,8 @@ p.left-text{
 }
 @media (max-width: 500px){
     *{
-        margin-left: 50px;
+        margin-right: 50px;
+        border: 1px solid red;
     }
     nav{
         z-index: 99;
