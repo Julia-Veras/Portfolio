@@ -995,7 +995,7 @@ p.left-text{
 @media (max-width: 500px){
     body{
         margin-right: 50px;
-        background-color:  red;
+        background-color:  yellow;
         width: 90%;
     }
     nav{
