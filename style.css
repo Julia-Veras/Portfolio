@@ -388,20 +388,20 @@ div.port-container{
     border-radius: 10px 50px 0px 0px;
 }
 .car-1{
-    background-image: url('./img/card-1.PNG');
+    background-image: url('./Portifolio/img/card-1.PNG');
     transition: 0.5s;
 }
 .car-2{
-    background-image: url('./img/card-3.png');
+    background-image: url('./Portifolio/img/card-2.png');
     transition: 0.5s;
 }
 .car-3{
-    background-image: url('./img/card-2.png');
+    background-image: url('./Portifolio/img/card-3.png');
     transition: 0.5s;
 }
 
 .car-4{
-    background-image: url('./img/card-4.png');
+    background-image: url('./Portifolio/img/card-4.png');
     transition: 0.5s;
 }
 
