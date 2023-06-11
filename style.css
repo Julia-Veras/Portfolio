@@ -694,24 +694,25 @@ p.left-text{
     }
 
     div.home-linguas{
-        margin-top: 0%;
+        margin-top: 20%;
     }
     a.button{
-        margin-top: 10%;
+        margin-top: 15%;
+    }
+    section#sobre{
+        margin-top: 20%;
     }
     section#portifolio{
         margin-bottom: 300px;
         height: 100vh;
     }
     section#contato{
-        margin-top: 100%;
         margin-bottom: 50px;
     }
     .footer{
         margin-top: 50px;
         text-align: center;
-        padding-top: 120px;
-        height: 90vh;
+        height: 95vh;
     }
 
     div.sobre-right{
@@ -735,7 +736,7 @@ p.left-text{
     }
 
     section#contato{
-        margin-top: 60%;
+        margin-top: 80%;
     }
 }
 @media (max-width: 1330px){
@@ -1081,7 +1082,7 @@ p.left-text{
         margin-left: 3%;
     }
     div.home-linguas{
-        margin-top: 10%;
+        margin-top: 15%;
     }
     a.button{
         margin-top: 35%;
