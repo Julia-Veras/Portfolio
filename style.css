@@ -117,9 +117,9 @@ div.home-left > h3{
     border-radius: 8px;
 }
 div.home-left > h3 strong{margin-left: 5px;}
-div.textos .p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
-div.textos .p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
-div.textos .p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
+div.textos >.p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
+div.textos >.p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
+div.textos >.p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
 
 @keyframes moveToTop {
     0% {
@@ -986,11 +986,14 @@ p.left-text{
 }
 
 @media only screen and (max-width: 425px){
+    div.home-linguas{
+        margin-top: 18%;
+    }
     div.textos .p3{
         font-size: 22px;
     }
     section#contato{
-        margin-top: 250%;
+        margin-top: 300%;
     }
     .footer{
         width: 100%;
@@ -1012,7 +1015,7 @@ p.left-text{
         font-size: 21px;
     }
     div.home-linguas
-    {margin-top: 8%;}
+    {margin-top: 12%;}
 
     .ca4{
         margin-top: 10%;
@@ -1023,7 +1026,7 @@ p.left-text{
         text-indent: -48px;
     }
     section#contato{
-        margin-top:300%;
+        margin-top: 350%;
     }
     .footer{
         width: 120%;
