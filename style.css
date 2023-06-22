@@ -117,9 +117,9 @@ div.home-left > h3{
     border-radius: 8px;
 }
 div.home-left > h3 strong{margin-left: 5px;}
-div.home-left >.p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
-div.home-left >.p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
-div.home-left >.p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
+div.textos >.p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
+div.textos >.p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
+div.textos >.p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
 
 @keyframes moveToTop {
     0% {
@@ -134,15 +134,22 @@ div.home-left >.p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size
 
 div.home-linguas{
     width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -20%;
+    margin-top: 5%;
+}
+div.linguas {
+    width: 100%;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
-    bottom: 0%;
-    margin-top: -50px;
     border-bottom: 2px solid #0082e6;
 }
-div.home-linguas > i{
+div.linguas > i{
     font-size: 45px;
     margin-left: 30px;
     margin-right: 30px;
@@ -154,21 +161,21 @@ div.home-linguas > i{
     align-items: center;
     padding: 5px;
 }
-div.home-linguas > .html:hover, div.home-linguas > .css:hover, div.home-linguas > .js:hover{
+div.linguas > .html:hover, div.linguas > .css:hover, div.linguas > .js:hover{
     color: #0d5785;
     background: #fff;
 }
-div.home-linguas >  .html{
+div.linguas >  .html{
     animation:  moveLeftToRight 1s .4s forwards;
     color: red;
     opacity: 0;
 }
-div.home-linguas > .css{
+div.linguas > .css{
     animation:  moveLeftToRight 1s .5s forwards;
     color: #2489C4;
     opacity: 0;
 }
-div.home-linguas > .js{
+div.linguas > .js{
     animation:  moveLeftToRight 1s .6s forwards;
     color: yellow;
     width: 38px;
@@ -214,7 +221,6 @@ a.button{
     z-index: 1;
     overflow: hidden;
     border-radius: 15px;
-    margin-top: 70px;
     border: 1px solid white;
     transition: all .7s;
 }
@@ -266,15 +272,15 @@ section#sobre{
     margin-bottom: 200px;
 }
 div.sobre-container{
-    /* border: 1px solid red; */
     width: 100%;
+    height: 50vh;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 150px;
 }
 div.simbo{
     display: flex;
-    /* border: 1px solid green; */
     width: 40%;
     justify-content: center;
     flex-wrap: wrap;
@@ -284,48 +290,41 @@ div.simbo > img{
     margin-left: 250px;
 }
 div.sobre-right{
-    width: 35%;
-    /* border: 1px solid purple; */
+    width: 50%;
+    padding: 5px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 350px;
     flex-wrap: wrap;
-    border-right: 5px solid #fff;
-    border-bottom: 5px solid #fff ;
-    border-bottom-right-radius: 90px;
     margin-right: 10px;
 }
 
 div.sobre-right .sobre-titu{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #0082e6;
     margin-bottom: 20px;
-    margin-left: -60px;
-    position: relative;
-    left: 0%;
+    text-indent: -50px;
 }
 div.sobre-texto{
-    /* background: red; */
-    width: 70%;
+    width: 100%;
     height: auto;
-    margin-left: 0px;
-    margin-top: -70px;
+    background-color: #13293D;
 }
 div.sobre-texto > h1{
     color: #1088c0;
     margin-bottom: -10px;
-    margin-left: 0px;
-    font-size: 30px;
+    font-size: 35px;
+    text-indent: 20px;
 }
 div.sobre-texto h1 > strong{
     color: #fff;
 }
 div.sobre-texto > p{
-    font-size: 17px;
+    margin-left: 2%;
+    font-size: 20px;
     color: #fff;
     font-weight: 500;
-    margin-left:0 px;
 }
 
 /* ------------ FIM ---------------- */
@@ -388,20 +387,20 @@ div.port-container{
     border-radius: 10px 50px 0px 0px;
 }
 .car-1{
-    background-image: url('./Portifolio/img/card-1.PNG');
+    background-image: url('./img/card-1.PNG');
     transition: 0.5s;
 }
 .car-2{
-    background-image: url('./Portifolio/img/card-3.png');
+    background-image: url('./img/card-3.png');
     transition: 0.5s;
 }
 .car-3{
-    background-image: url('./Portifolio/img/card-2.png');
+    background-image: url('./img/card-2.png');
     transition: 0.5s;
 }
 
 .car-4{
-    background-image: url('./Portifolio/img/card-4.png');
+    background-image: url('./img/card-4.png');
     transition: 0.5s;
 }
 
@@ -615,6 +614,9 @@ p.left-text{
     nav{
         z-index: 99;
     }
+    div.home-linguas{
+        margin-top: 5%;
+    }
     .footer{
         height: 70vh;
         bottom: 0%;
@@ -624,7 +626,12 @@ p.left-text{
         margin-left: 0px;
     }
     section#portifolio{
-        height: 95vh;
+        height: 95vh;   
+        width: 97%;
+    }
+    div.port-container{
+        width: 98%;
+        margin-left: 25px;
     }
     .card{
         margin: 20px;
@@ -634,56 +641,35 @@ p.left-text{
     }
 
 }
+@media (max-width: 1535px){
+    div.port-container{
+        flex-wrap: wrap;
+    }
+    section#contato{
+        margin-top: 50%;
+    }
+    .footer{
+        margin-top: 0%;
+    }
+
+}
 @media (max-width: 1440px){
     nav{
         z-index: 99;
     }
-
-    div.home-linguas{
-        margin-top: 10%;
-    }
-    a.button{
-        margin-top: 10%;
-    }
     div.sobre-container{
         margin-top: 30px;
-    }
-    div.sobre-right{
-        margin-right: 0px;
-        width: 45%;
-        height: 50vh;
-        padding-left: 120px;
-        padding-right: 30px;
-        position: relative;
-        left: 25%;
-        top: -45%;
-    }
-    div.sobre-titu{
-        margin-left: 10px;
-    }
-    div.sobre-texto{
-        width: 200%;
-        margin-left: -30px;
     }
     div.simbo{
         margin-left: -50px;
         width: 500px;
     }
-
-    div.port-container{
-        flex-wrap: wrap;
-    }
-
-    
     section#contato{
-        margin-top: 80%;
+        margin-top: 50%;
     }
     .footer{
-        height: 80vh;
+        height: 58vh;
         padding-top: 5%;
-    }
-    .footer h1{
-        margin-top: 10%;
     }
 }
 
@@ -692,58 +678,41 @@ p.left-text{
     nav{
         z-index: 99;
     }
-
-    div.home-linguas{
-        margin-top: 20%;
-    }
-    a.button{
-        margin-top: 15%;
-    }
-    section#sobre{
-        margin-top: 20%;
-    }
     section#portifolio{
         margin-bottom: 300px;
         height: 100vh;
     }
+    div.port-container{
+        flex-wrap: wrap;
+    }
     section#contato{
+        margin-top: 100%;
         margin-bottom: 50px;
+    }
+    div.sobre-right{
+        margin-left: 13%;
     }
     .footer{
         margin-top: 50px;
         text-align: center;
-        height: 95vh;
-    }
-
-    div.sobre-right{
-        width: 55%;
-        left: 8%;
-        margin-right: 90px;
-    }
-    div.sobre-titu{
-        margin-left: 0px;
-    }
-    div.sobre-texto{
-        width: 200%;
-        margin-left: -30px;
-    }
-    div.simbo{
-        margin-left: -100px;
-        width: 500px;
-    }
-    .card{
-        margin: 30px;
+        padding-top: 120px;
+        height: 90vh;
     }
 
     section#contato{
-        margin-top: 80%;
+        margin-top: 60%;
     }
 }
 @media (max-width: 1330px){
     div.port-container{
         flex-wrap: wrap;
     }
-
+    div.simbo{
+        margin-left: -100px;
+    }
+    div.sobre-right{
+        margin-left: 10%;
+    }
 }
 @media (max-width: 953px) {
     nav{
@@ -769,14 +738,11 @@ p.left-text{
         }
         div.simbo{
             margin-left: -200px;
-            margin-right: 550px;
+            margin-right: 50px;
             margin-bottom: 0%;
-            position: relative;
-            top: -50%;
         }
         div.sobre-right{
-            top: 0%;
-            margin-left: 25%;
+            margin-top: 20%;
         }
         .footer{
             height: 90vh;
@@ -801,22 +767,13 @@ p.left-text{
         }
 }
 
-@media (max-width: 933px){  
-    nav{
-        z-index: 99;
-    }
-    div.sobre-right div.sobre-titu{
-        margin-left: -70px;
-    }
-    div.sobre-right div.sobre-titu{
-        font-size: 1.3rem;
-        margin-left: -25%;
-    }
-}
 
 @media (max-width: 899px){
     nav{
         z-index: 99;
+    }
+    div.sobre-container{
+        flex-wrap: nowrap;
     }
     section#portifolio{
         margin-bottom: 500px;
@@ -875,15 +832,13 @@ p.left-text{
         flex-wrap: wrap;
         justify-content: center;
     }
-    div.simbo{
-        top: 0%;
-        left: 28%;
-    }
     div.sobre-right{
-        width: 950px;
-        top: 5%;
-        left: 0%;
-        margin-left: 50px;
+        width: 98%;
+        margin-left: 20px;
+        background-color: #fff;
+    }
+    div.sobre-texto{
+        width: 815px;
     }
 
     section#contato div.tema > h1{
@@ -918,10 +873,6 @@ p.left-text{
 
 @media (max-width: 819px){
 
-    
-    div.home-linguas{
-        margin-top: -12%;
-    }
     section#contato{
         margin-top: 200%;
     }
@@ -965,35 +916,14 @@ p.left-text{
     .footer{
         margin-top: 10%;
     }
-    div.simbo{
-        left: 38%;
-    }
-    div.sobre-right{
-        width: 990px;
-    }
-    div.sobre-right div.sobre-titu{
-        margin-left: -50px;
-        font-size: 1.3rem;
-    }
 }
 
 @media (max-width: 633px){
     nav{
         z-index: 99;
     }
-    div.simbo{
-        left: 39%;
-    }
-    div.sobre-right{
-        width: 1000px;
-        left: 2%;
-    }
-    div.sobre-right div.sobre-titu{
-        font-size: 1.3rem;
-        margin-left: -20%;
-    }
     .footer{
-        width: 120%;
+        width: 100%;
     }
 }
 @media (max-width: 500px){
@@ -1012,34 +942,10 @@ p.left-text{
     }
     div.home-left > h2{font-size: 2rem;}
     div.home-left > h3{width: 65%;margin-left: 75px;}
-    div.home-left >.p2{ font-size: 1.4rem;margin-left: -1%;}
-    div.home-left >.p3{ font-size: 1.4rem;margin-left: 0%;}
+    div.textos >.p2{ font-size: 1.4rem;margin-left: -1%;}
+    div.textos >.p3{ font-size: 1.4rem;margin-left: 0%;}
 
-    div.home-linguas{
-        margin-top: 0%;
-    }
-     a.button{
-        font-size: 1.1rem;
-        margin-top: 20%;
-        top: 70%;
-    }
-    div.simbo{
-        left: 0%;
-        margin-left: 290px;
-    }
-    div.sobre-right{
-        width: 1090px;
-        left: 5%;
-    }
-    div.sobre-right div.sobre-titu{
-        font-size: 1.1rem;
-        margin-left: -70%;
-        margin-right: -13px;
-    }
-    div.sobre-texto{
-        margin-left: -48%;
-        padding-left: 15px;
-    }
+   
     section#contato{
         margin-top: 200%;
         margin-bottom: 80px;
@@ -1051,21 +957,27 @@ p.left-text{
 }
 
 @media only screen and (max-width: 590px){
-    
+    div.textos{
+        width: 110%;
+        margin-left: -30px;
+    }
+    div.sobre-right div.sobre-titu{
+        text-align: center;
+        margin-left: 40px;
+        font-size: 1.4em;
+    }
     section#contato{
     margin-top: 220%;
 }
 }
 @media only screen and (max-width: 450px) {
-    div.home-left .p2{
-        margin-left: -2%;
+
+    div.home-linguas{
+        margin-top: 18%;
     }
-    div.home-left .p3{
-        width: 105%;
-        margin-left: -5%;
-    }
-    .home-linguas{
-        margin-top: -90%;
+ 
+    div.sobre-right div.sobre-titu{
+        font-size: 1.3em;
     }
     section#contato{
         margin-top: 230%;
@@ -1074,25 +986,14 @@ p.left-text{
 }
 
 @media only screen and (max-width: 425px){
-    div.home-left .p2{
-        margin-left: -2%;
+    div.textos .p3{
+        font-size: 22px;
     }
-    div.home-left .p3{
-        width: 105%;
-        margin-left: 3%;
-    }
-    div.home-linguas{
-        margin-top: 15%;
-    }
-    a.button{
-        margin-top: 35%;
-    }
-
     section#contato{
         margin-top: 250%;
     }
     .footer{
-        width: 110%;
+        width: 100%;
     }
 }
 
@@ -1104,24 +1005,23 @@ p.left-text{
     div.home-container{
         width: 95%;
     }
-    div.home-left .p2{
-        margin-left: -5%;
+    div.textos .p1{
+        font-size: 30px;
     }
-    div.home-left  .p3{
-        margin-left: 0%;
+    div.textos .p3{
+        font-size: 21px;
     }
-    div.home-linguas{
-        margin-top: -9%;
-    }
-    a.button{
-        margin-top: 22%;
-        margin-left: 5%;
-    }
+    div.home-linguas
+    {margin-top: 8%;}
 
     .ca4{
         margin-top: 10%;
     }
 
+    div.sobre-right div.sobre-titu{
+        font-size: 1.2em;
+        text-indent: -48px;
+    }
     section#contato{
         margin-top:300%;
     }
@@ -1133,46 +1033,23 @@ p.left-text{
     }
 }
 
-@media screen and (max-width: 370px){
-    div.home-linguas{
-        margin-top: 4%;
-    }
-    a.button{
-        margin-top: 30%;
-    }
-}
+
 
 @media screen and (max-width: 333px) {
     div.home-left h1.title{
         font-size: 3rem;
     }
-    div.home-left h2{
-        font-size: 1.7rem;
-    }
-    div.home-left h3{
-        font-size: 2rem;
-        margin-left: 15%;
-    }
-    div.home-left .p1{
-        font-size: 1.6rem;
-    }
-    div.home-left  .p2{
-        margin-top: 10%;
-    }
-    div.home-left  .p2,  div.home-left  .p3{
-        font-size: 22px;
-        margin-left: 0%;
-    }
-    div.home-left  .p3{
-        width: 100%;
-    }
-    div.home-linguas{
-        margin-top: 8%;
-    }
-    a.button{
-        margin-top: 40%;
-    }
-    
+        div.textos .p1{
+            font-size: 25px;
+        }
+        div.textos .p2{
+            font-size: 22px;
+        }
+        
+        div.textos .p3{
+            font-size: 22px;
+            margin-left: 15px;
+        }
     .port-container{
         width: 90%;
     }
@@ -1184,15 +1061,13 @@ p.left-text{
         margin-right: -20%;
     }
 
-
+    div.home-linguas{
+        margin-top: 25%;
+    }
     section#contato{
         margin-top: 370%;
     }
 
-    .footer{
-        height: 80vh;
-        width: 130%;
-    }
     div.container-redes{
         width: 100%;
         height: 20vh;
@@ -1210,10 +1085,11 @@ p.left-text{
     }
     .footer{
         height: 60vh;
+
     }
 } 
 @media screen and(max-width: 266px) {
     .footer{
-        width: 120%;
+        width: 100%;
     }
 }
