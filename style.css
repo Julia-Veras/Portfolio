@@ -117,9 +117,9 @@ div.home-left > h3{
     border-radius: 8px;
 }
 div.home-left > h3 strong{margin-left: 5px;}
-div.textos >.p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
-div.textos >.p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
-div.textos >.p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
+div.textos .p1{ animation: moveToTop 1s .7s forwards;  opacity: 0; font-size: 2rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;}
+div.textos .p2{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;margin-top: 15px;color: #fff;margin-left: 15px;}
+div.textos .p3{ animation: moveToTop 1s .8s forwards;  opacity: 0; font-size: 1.5rem;width: 100%;display: flex;justify-content: center;;color: #fff;margin-left: 15px;}
 
 @keyframes moveToTop {
     0% {
@@ -387,20 +387,20 @@ div.port-container{
     border-radius: 10px 50px 0px 0px;
 }
 .car-1{
-    background-image: url('./img/card-1.PNG');
+    background-image: url('./Portifolio/img/card-1.PNG');
     transition: 0.5s;
 }
 .car-2{
-    background-image: url('./img/card-3.png');
+    background-image: url('./Portifolio/img/card-3.png');
     transition: 0.5s;
 }
 .car-3{
-    background-image: url('./img/card-2.png');
+    background-image: url('./Portifolio/img/card-2.png');
     transition: 0.5s;
 }
 
 .car-4{
-    background-image: url('./img/card-4.png');
+    background-image: url('./Portifolio/img/card-4.png');
     transition: 0.5s;
 }
 
