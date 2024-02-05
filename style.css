@@ -300,9 +300,19 @@ section#portfolio h1.titu{
 }
 .card h1{
     color: #1088c0;
+    font-size: 22px;
+    margin-left: 10px;
+   
+}
+.card h1 > strong{
+    font-size: 30px;
 }
 .card > p{
     color: white;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-weight: bold;
 }
 .card-image{
     background-color: aqua;
