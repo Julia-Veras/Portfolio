@@ -264,8 +264,10 @@ div.sobre-co span{
     margin-top: 1%;
     float: left;
     margin-left: -10px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
 }
-
 .about-image {
     margin-left: 20px;
     object-fit: cover;
@@ -538,6 +540,16 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: 8%;
+    } 
+    div.sobre-co{
+        width: 320px;
+        height: 60vh;
+    }
+    div.sobre-co span{
+        margin-left: -38px;
+        font-size: 19px;
+         text-align: justify;
+         margin-top: -9%;
     }
     .about-image{
         width: 200px;
