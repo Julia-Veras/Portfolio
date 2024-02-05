@@ -458,6 +458,13 @@ footer {
 }
 
 
+@media (max-width: 1200px){
+    .about-container{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+
 
 @media (max-width: 859px){
     body{
@@ -519,6 +526,7 @@ footer {
     }
 
 }
+
 
 @media (max-width: 700px) {
     header h1{
