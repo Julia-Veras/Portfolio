@@ -2,106 +2,80 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
     <title>Julia Veras Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./Portifolio/fontawesome-free-6.3.0-web/css/all.css">
     <script src="nav.js"></script>
     <script>
-         myfunction =(icon) => icon.classList.toggle
-    ('fa-close')
-    </script>
-
+        myfunction =(icon) => icon.classList.toggle
+   ('fa-close')
+   </script>
 </head>
 <body>
-    <nav class="nav">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars icon"  onclick="myfunction(this)"></i>
-          
-        </label>
-        <label class="logo">JV</label>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portifolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-    </nav>
-    <!-- -------------CONTEUDO-------------  -->
-    <section id="home">
+
+    <header >
        
-
-            <div class="home-container">
-
-                    <div class="home-left">
-                        <h1 class="title">Julia Veras</h1>
-                        <h2>Desenvolvedora Front-and </h2>
-                        <h3>  Web  <strong> |</strong></h3>
-
-                        <div class="textos">
-                        <p class="p1">Este é meu Portfólio oficial.</p>
-                        <p class="p2">Todos os  trabalhos que participei e </p><p class="p3"> foram desenvolvidos  por mim  estão aqui.</p>
-                        </div>  
-                    </div>
-
-                    <div class="home-linguas">
-                        <div class="linguas">
-                            <i class="fa-brands fa-html5 html"></i>
-                            <i class="fa-brands fa-css3-alt css"></i>   
-                            <i class="fa-brands fa-js js"></i>
-                        </div>
-                            <a href="./Portifolio/img/Meu Currículo.pdf" class="button" download>Download </a>
-                    </div>
+        <nav class="nav">
+            <h1>JV</h1>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars icon"  onclick="myfunction(this)"></i>
+              
+            </label>
+                <ul>  
                     
-            </div>   
+                    <li><a href="#inicio" class="active">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Seja bem-vindo ao meu portfólio!</h1>
+        <p class="p1">Meu nome é Julia Veras, e eu sou um desenvolvedora web apaixonado por criar soluções inovadoras.</p>
+        <p class="p1">Todos os trabalhos que participei e
+
+            foram desenvolvidos por mim estão aqui.</p>
+            <div class="linguas">
+                <div class="linguas-icon">
+                <i class="fa-brands fa-html5 html"></i>
+                <i class="fa-brands fa-css3-alt css"></i>   
+                <i class="fa-brands fa-js js"></i>
+            </div>
+                <a class="button" download>Front-End </a>
+        </div>
     </section>
 
     <section id="sobre">
-                        <div class="tudo-sobre">
-                                <div class="tema">
-                                    <h1 >Sobre</h1>
-                                </div>
-                        </div>
+        <h1 class="titu">Sobre Mim</h1>
+     
+        <div class="about-container">
+          
+                <div class="sobre-co">
+                    <p>Olá, Eu sou Julia Veras</p><br>
+                <span> A mente curiosa por trás deste espaço. Imagine alguém apaixonada por tecnologia com uma boa dose de criatividade e uma vontade constante de explorar o vasto universo da web. </span><br>
+                <span>Quando não estou teclando no meu teclado, você pode me encontrar experimentando novas ideias e enredos para projetos que desafiem a monotonia. Acredito que a tecnologia, aliada à imaginação, tem o poder de criar coisas incríveis.. </span> <br>
+               <span> Estou sempre em busca da próxima aventura digital, seja aprendendo uma nova linguagem de programação, descobrindo ferramentas inovadoras ou mergulhando em projetos interessantes. Afinal, a jornada é tão importante quanto o destino, certo?
 
-    <div class="sobre-container">
-                <div class="simbo">
-                    <img src="./Portifolio/img/simbolo.png" alt="Simbolo do Front-and">
-                </div>
-            <div class="sobre-right">
-                
-                  
-                   <div class="sobre-titu">
-                          <h1>Desenvolvedora Front-end</h1>
-                     </div>
-                        <div class="sobre-texto">
-                            <h1> Web <strong>|</strong></h1><br>
-                            <p>Técnica em Informática, Foco em implementar, executar, integrar desenvolvendo sistemas, sites, aplicativos, softwares e outros.</p>
-                            <p>Sou  ágil, dedicada e proativa em tudo o que faço. </p> 
-                            <p>Além disso, busco sempre me aprimorar e aprender mais. </p>
-                        </div>
-                    
+                Sinta-se à vontade para explorar meu pequeno canto cibernético.  </span>
+            </div>
+            <img class="about-image" src="./img/me.png" alt="Imagem Redonda">
         </div>
-    </div>
-
     </section>
 
 
-
-
-    <section id="portifolio">
-        <div class="tudo">
-        <div class="tema">
-            <h1>Portfólio</h1>
-        </div>
+    <section id="portfolio">
+        <h1  class="titu">Portfolio</h1>
         <div class="port-container">
-            <div class="card ca-1">
+            <div class="card">
                 <div class="card-image car-1"></div>  
-                    <h1>Website  <strong>|</strong> Coworking</h1>
-                    <p>Website responsivo para empresa de contadores.</p> 
-                    <p>HTML-CSS-JavaScript</p>
-                    <p>90% Concluído </p>
+                <h1>Website  <strong>|</strong> Coworking</h1>
+                <p>Website responsivo para empresa de contadores.</p> 
+                <p>HTML-CSS-JavaScript</p>
+                <p>90% Concluído </p>
                     <div class="link">
                     <a href="https://github.com/Julia-Veras?tab=repositories"><i class="fa-brands fa-github"></i> </a>
                     <a href="https://julia-veras.github.io/Portfolio/"><i class="fa-solid fa-globe"></i></a>
@@ -110,102 +84,81 @@
     
             <div class="card">
                 <div class="card-image car-2"></div>  
-                    <h1>Syscad  <strong>|</strong> tela de usuário</h1>
-                    <p>Projeto para a parcial do técnico. Tela do Usúario responsiva com formulário</p> 
-                    <p>HTML-CSS-JavaScript-PHP-MSYQL</p>
-    
+                <h1>Syscad  <strong>|</strong> tela de usuário</h1>
+                <p>Projeto para a parcial do técnico. Tela do Usúario responsiva com formulário</p> 
+                <p>HTML-CSS-JavaScript-PHP-MSYQL</p>
                     <div class="link">
                         <a href="https://github.com/Julia-Veras?tab=repositories"><i class="fa-brands fa-github"></i> </a>
-                        <a href="https://julia-veras.github.io/SYSCAD/Syscad/"><i class="fa-solid fa-globe"></i></a>
+                        <a href="https://julia-veras.github.io/Portfolio/"><i class="fa-solid fa-globe"></i></a>
                     </div>
             </div>
     
             <div class="card">
                 <div class="card-image car-3"></div>  
-                    <h1>Projeto Social  <strong>|</strong> Website</h1>
-                    <p>Site para escola, Fiz parte da equipe de programação que está desenvolvendo o projeto site da escola JB (em andamento)</p> 
-                    <p>HTML-CSS-JavaScript</p>
-                    <div class="link alto">
+                <h1>Projeto Social  <strong>|</strong> Website</h1>
+                <p>Site para escola, Fiz parte da equipe de programação que está desenvolvendo o projeto site da escola JB (em andamento)</p> 
+                <p>HTML-CSS-JavaScript</p>
+                                <div class="link">
                         <a href="https://github.com/Julia-Veras?tab=repositories"><i class="fa-brands fa-github"></i> </a>
-                        <a href="https://julia-veras.github.io/Portfolio/"><i class="fa-solid fa-globe"></i></a>
+                        <a href="https://mariajamille.github.io/Site-JB/"><i class="fa-solid fa-globe"></i></a>
                     </div>
-        </div>
-        <div class="card ca4">
+            </div>
+        <div class="card">
             <div class="card-image car-4"></div>  
-                <h1>Landing Page<strong>|</strong> Website</h1>
-                <p>Site voltado a apresentar serviços para um futuro cliente 
-                </p> 
-                <p>HTML-CSS</p>
-                <div class="link alto">
+            <h1>Projeto Social  <strong>|</strong> Website</h1>
+            <p>Site para escola, Fiz parte da equipe de programação que está desenvolvendo o projeto site da escola JB (em andamento)</p> 
+            <p>HTML-CSS-JavaScript</p>
+                            <div class="link">
                     <a href="https://github.com/Julia-Veras?tab=repositories"><i class="fa-brands fa-github"></i> </a>
-                    <a href="https://julia-veras.github.io/landingpageKE/"><i class="fa-solid fa-globe"></i></a>
+                    <a href="https://julia-veras.github.io/Portfolio/"><i class="fa-solid fa-globe"></i></a>
                 </div>
         </div>
-    </div>    
-
-    </section>
-</body>
-
-
-
-<section id="contato">
-    <div class="tema">
-        <h1>Contato</h1>
     </div>
-    <div class="contato-conteudo">
-            <div class="card-loca">
-            <a class="contato-location">
-                <i class="fa-solid fa-location-dot"></i>
-            </a>
-            <div class="contato-text">
-                <h5 class="loca-h5">Localização:</h5>
-                <p>Fortaleza-Ce</p>
-            </div>
-        </div>
+    
+</div>
+    </section>
 
-            
-        <div class="card-mail">
-            <a class="contato-mail" href="mailto:juliaverasdev@gmail.com">
-                <i class="fa-sharp fa-solid fa-envelope"></i>
-            </a>
-            <div class="contato-text">
-                <h5>E-mail:</h5>
-                <p class="left-text">juliaverasdev@gmail.com</p>
+    <section id="contato">
+        <h1  class="titu">Entre em Contato</h1>
+        <p>Ficarei feliz em conversar sobre projetos interessantes. Entre em contato comigo através:</p>
+        
+        <div class="contato-conteudo">
+            <div class=" tele">
+                <div class="rela">
+                <a href="https://wa.me/5585987399447"><i class="fa-brands fa-whatsapp"></i></a><br>
+                <p class="titu-cont">Whatsapp:</p>
+                <h3>+55 (85) 98739-9447</h3>
             </div>
-        </div>
+            </div>
 
-        <div class="card-call">
-            <a class="contato-call" href="tel:+5585987399447">
-                <i class="fa-solid fa-phone-volume"></i>
-            </a>
-            <div class="contato-text">
-                <h5 class="call-h5">Telefone:</h5>
-                <p>+55 85 9 87399447</p>
+            <div class=" email">
+                <div class="rela">
+                <a href="mailto:juliaverasdev@gmail.com"><i class="fa-regular fa-envelope"></i><br></a>
+                <p class="titu-cont">Email:</p>
+                <h3>Juliaveraspinto@gmail.com</h3>
             </div>
-        </div>
+            </div>
+
+            <div class=" git">
+                <div class="rela">
+                <a  href="https://github.com/Julia-Veras?tab=repositories"><i class="fa-brands fa-github"></i><br></a>
+                <p class="titu-cont">Github:</p>
+                <h3>github.com/Julia-Veras</h3>
+            </div>
+            </div>
      </div>
+    </section>
 
-</section>
-
-<!-- ------------------------ FOOTER------------------- -->
-
-                     <footer class="footer">
-
-                            <h1>Julia Veras</h1>
+    <footer class="footer">
+        <h1>Julia Veras</h1>
                             <p>Este é meu Website e Portfólio oficial.</p>
 
                             <p> Todos os detalhes dos trabalhos desenvolvidos por mim estão aqui.</p>
 
-                            <div class="container-redes">
-                               <a href="https://github.com/Julia-Veras?tab=repositories"><i class="fa-brands fa-github fo-media"></i></a>
-                               <a href="https://wa.me/5585987399447"><i class="fa-brands fa-whatsapp fo-media"></i></a>
-                               <a href="" class="ia"><i class="fa-brands fa-linkedin fo-media"></i></a>
-                               </div>                     
-                            </div>
-                            <p >© Copyright
-                                    <span>Julia Veras</span>. All Rights Reserved</p><br>
+                          
                                     <p class="p1">Desenvolvido por <a href="" class="ju">Julia Veras</a></p>
-                    </footer>
-             
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
 
+</body>
 </html>
